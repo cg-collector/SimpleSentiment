@@ -2,10 +2,9 @@ version: "3.9"
 
 services:
   bettafish:
-    image: ghcr.io/666ghj/bettafish:latest
-    # Speed up mirror
-    # image: ghcr.nju.edu.cn/666ghj/bettafish:latest
-    container_name: bettafish
+    # 需要自行构建镜像或使用本地环境运行
+    # image: ghcr.io/cg-collector/simplesentiment:latest
+    container_name: simplesentiment
     restart: unless-stopped
     environment:
       - PYTHONUNBUFFERED=1

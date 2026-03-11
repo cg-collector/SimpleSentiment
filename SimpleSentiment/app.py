@@ -90,7 +90,7 @@ if page == "🏠 首页":
     st.markdown('<div class="info-box">', unsafe_allow_html=True)
     st.markdown("### 📖 关于项目")
     st.markdown("""
-    SimpleSentiment 是从 [BettaFish](https://github.com/666ghj/BettaFish) 项目中提炼和简化而来的轻量级舆情监测分析预测系统。
+    SimpleSentiment 是一个轻量级舆情监测分析预测系统，专注于舆情监测、分析和预测三大核心功能。
 
     **核心特点**:
     - ✅ 代码简洁（~2000行）
@@ -288,7 +288,7 @@ elif page == "⚙️ 系统设置":
         **名称**: SimpleSentiment
         **版本**: v1.0.0-alpha
         **类型**: 轻量级舆情监测分析预测系统
-        **基于**: [BettaFish](https://github.com/666ghj/BettaFish)
+        **仓库**: https://github.com/cg-collector/SimpleSentiment
 
         #### 技术栈
 
@@ -319,7 +319,7 @@ elif page == "⚙️ 系统设置":
 
         #### 致谢
 
-        感谢 [BettaFish](https://github.com/666ghj/BettaFish) 项目的启发和贡献
+        感谢开源社区的贡献和支持
         """)
 
 # 页脚

@@ -18,7 +18,7 @@
 
 ## 📖 项目简介
 
-**SimpleSentiment** 是从 [BettaFish](https://github.com/666ghj/BettaFish) 项目中提炼和简化而来的轻量级舆情监测分析预测系统。本项目专注于**舆情监测、舆情分析、舆情预测**三大核心功能，大幅简化系统架构，将代码量从数万行精简至约2000行，非常适合教学演示、课程项目和学术研究。
+**SimpleSentiment** 是一个轻量级舆情监测分析预测系统，专注于**舆情监测、舆情分析、舆情预测**三大核心功能。本项目采用精简的系统架构，代码量约2000行，非常适合教学演示、课程项目和学术研究。
 
 ### 核心特点
 
@@ -69,8 +69,8 @@
 #### 1. 克隆项目
 
 ```bash
-git clone https://github.com/666ghj/BettaFish.git
-cd BettaFish/SimpleSentiment
+git clone https://github.com/cg-collector/SimpleSentiment.git
+cd SimpleSentiment
 ```
 
 #### 2. 安装依赖
@@ -400,19 +400,19 @@ Streamlit可视化展示
 
 ## 🙏 致谢
 
-- 本项目基于 [BettaFish](https://github.com/666ghj/BettaFish) 简化而来
-- 感谢原项目作者的贡献
-- 感谢以下开源项目的支持：
-  - [Streamlit](https://streamlit.io/)
-  - [Prophet](https://facebook.github.io/prophet/)
-  - [SnowNLP](https://github.com/isnowfy/snownlp)
+感谢以下开源项目的支持：
+  - [Streamlit](https://streamlit.io/) - Web应用框架
+  - [Prophet](https://facebook.github.io/prophet/) - 时间序列预测
+  - [SnowNLP](https://github.com/isnowfy/snownlp) - 中文情感分析
+  - [Plotly](https://plotly.com/) - 交互式可视化
+  - [Pandas](https://pandas.pydata.org/) - 数据处理
 
 ---
 
 ## 📞 联系方式
 
-- **Issues**: [GitHub Issues](https://github.com/666ghj/BettaFish/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/666ghj/BettaFish/discussions)
+- **Issues**: [GitHub Issues](https://github.com/cg-collector/SimpleSentiment/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/cg-collector/SimpleSentiment/discussions)
 
 ---
 
@@ -420,6 +420,6 @@ Streamlit可视化展示
 
 **⭐ 如果这个项目对你有帮助，请给个Star！**
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by cg-collector
 
 </div>

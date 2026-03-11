@@ -196,8 +196,8 @@ python app.py
 
 ## 📞 联系方式
 
-- **Issues**: [GitHub Issues](https://github.com/666ghj/BettaFish/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/666ghj/BettaFish/discussions)
+- **Issues**: [GitHub Issues](https://github.com/cg-collector/SimpleSentiment/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/cg-collector/SimpleSentiment/discussions)
 
 ---
 
