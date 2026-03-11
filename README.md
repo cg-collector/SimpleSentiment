@@ -90,38 +90,91 @@ wordcloud>=1.9.2       # 词云
 openai>=1.3.0          # LLM接口（可选）
 ```
 
-#### 3. 配置环境变量
+#### 3. 配置环境变量（可选）
 
 ```bash
 # 复制配置文件模板
 cp .env.example .env
 
-# 编辑配置文件（可选，如需LLM功能）
+# 编辑配置文件（如需LLM功能，可选）
 # vim .env
 ```
 
-`.env` 配置示例：
-```bash
-# LLM配置（可选）
-OPENAI_API_KEY=your_api_key_here
-OPENAI_BASE_URL=https://api.openai.com/v1
-MODEL_NAME=gpt-4o-mini
-
-# 采集配置
-CRAWL_DELAY=1
-MAX_PAGES=5
-
-# 是否启用LLM功能
-ENABLE_LLM=false
-```
+**注意**: 基础功能无需配置环境变量即可运行。LLM功能为可选项。
 
 #### 4. 启动系统
 
+**方式一：默认端口启动**
 ```bash
+cd SimpleSentiment
 streamlit run app.py
 ```
 
-启动后访问：http://localhost:8501
+**方式二：指定端口启动**（推荐）
+```bash
+cd SimpleSentiment
+streamlit run app.py --server.port 8503
+```
+
+**如果端口被占用，查看并清理端口：**
+```bash
+# 查看占用的进程
+lsof -ti:8503
+
+# 清理端口
+lsof -ti:8503 | xargs kill -9
+
+# 重新启动
+streamlit run app.py --server.port 8503
+```
+
+#### 5. 访问系统
+
+启动成功后，在浏览器中访问：
+- **默认地址**: http://localhost:8501
+- **指定端口**: http://localhost:8503
+
+**验证启动成功的标志**：
+```bash
+# 你应该看到类似的输出
+  👋 Welcome to Streamlit!
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8503
+  Network URL: http://192.168.x.x:8503
+```
+
+**测试命令**：
+```bash
+# 检查服务是否正常运行
+curl -s http://localhost:8503 > /dev/null && echo "✅ Streamlit 运行正常" || echo "❌ 启动失败"
+```
+
+---
+
+## ✅ 实际测试环境
+
+**测试日期**: 2026-03-11
+**测试环境**: macOS + Python 3.13
+**测试结果**: ✅ 成功运行
+
+**实际安装过程**：
+```bash
+# 1. 安装依赖（已测试）
+$ pip install -r requirements.txt
+Requirement already satisfied: streamlit>=1.28.0
+Collecting snownlp>=0.12.3
+  Downloading snownlp-0.12.3.tar.gz (37.6 MB)
+Successfully installed snownlp-0.12.3 plotly-6.6.0 wordcloud-1.9.6 matplotlib-3.10.8
+
+# 2. 启动应用（已测试）
+$ streamlit run app.py --server.port 8503
+✅ 成功！Streamlit 运行在端口 8503
+
+# 3. 访问测试（已测试）
+$ curl -s http://localhost:8503 > /dev/null && echo "✅ 访问成功"
+✅ 访问成功
+```
 
 ---
 
