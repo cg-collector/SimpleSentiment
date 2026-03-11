@@ -395,31 +395,3 @@ Streamlit可视化展示
 ## 📄 许可证
 
 本项目采用 [GPL-2.0 许可证](LICENSE) 开源。
-
----
-
-## 🙏 致谢
-
-感谢以下开源项目的支持：
-  - [Streamlit](https://streamlit.io/) - Web应用框架
-  - [Prophet](https://facebook.github.io/prophet/) - 时间序列预测
-  - [SnowNLP](https://github.com/isnowfy/snownlp) - 中文情感分析
-  - [Plotly](https://plotly.com/) - 交互式可视化
-  - [Pandas](https://pandas.pydata.org/) - 数据处理
-
----
-
-## 📞 联系方式
-
-- **Issues**: [GitHub Issues](https://github.com/cg-collector/SimpleSentiment/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/cg-collector/SimpleSentiment/discussions)
-
----
-
-<div align="center">
-
-**⭐ 如果这个项目对你有帮助，请给个Star！**
-
-Made with ❤️ by cg-collector
-
-</div>
